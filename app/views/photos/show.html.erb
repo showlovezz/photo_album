@@ -1,6 +1,6 @@
 <%= @photo.title %>
 <%= @photo.date %>
-<%= image_tag @photo.file_location.url, style: "max-height:50% ; max-width:50%" %>
+<%= image_tag @photo.file_location.url, style: "max-height:30% ; max-width:30%", class: "img-thumbnail" %>
 <%= simple_format(@photo.description) %>
 
 <p><%= link_to "Back to Index", photos_path %></p>
